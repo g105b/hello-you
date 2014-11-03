@@ -9,6 +9,8 @@ def fun(x):
 class TestMyHelloThing(unittest.TestCase):
     def test_hello(self):
         self.assertEqual(hello.sayHello(), "Hello World!!")
+    def test_helloName(self):
+    	self.assertEqual(hello.sayName("Martyn"),"Hello Martyn!!")
 
 
 if __name__ == '__main__':
